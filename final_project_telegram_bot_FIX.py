@@ -140,7 +140,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 # Fungsi utama untuk menjalankan bot
 async def main() -> None:
-    application = ApplicationBuilder().token('7185147100:AAFpUldHJtuIbNxfqTLCMj7qwAieWhyCIVU').build()
+    application = ApplicationBuilder().token('Token_API_BOT_TELEGRAMMU').build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
